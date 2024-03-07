@@ -1,0 +1,298 @@
+Program.Sub.ScreenSU.Start
+gui.F_Positive_Pay_PplsUnited..create
+gui.F_Positive_Pay_PplsUnited..caption("Positive Pay File")
+gui.F_Positive_Pay_PplsUnited..size(3420,2475)
+gui.F_Positive_Pay_PplsUnited..position(0,0)
+gui.F_Positive_Pay_PplsUnited..event(unload,f_positive_pay_pplsunited_unload)
+gui.F_Positive_Pay_PplsUnited..alwaysontop(False)
+gui.F_Positive_Pay_PplsUnited..fontname("Arial")
+gui.F_Positive_Pay_PplsUnited..fontsize(8)
+gui.F_Positive_Pay_PplsUnited..forecolor(0)
+gui.F_Positive_Pay_PplsUnited..fontstyle(,,,,)
+gui.F_Positive_Pay_PplsUnited..BackColor(-2147483633)
+gui.F_Positive_Pay_PplsUnited..controlbox(True)
+gui.F_Positive_Pay_PplsUnited..maxbutton(True)
+gui.F_Positive_Pay_PplsUnited..minbutton(True)
+gui.F_Positive_Pay_PplsUnited..mousepointer(0)
+gui.F_Positive_Pay_PplsUnited..moveable(True)
+gui.F_Positive_Pay_PplsUnited..sizeable(False)
+gui.F_Positive_Pay_PplsUnited..ShowInTaskBar(True)
+gui.F_Positive_Pay_PplsUnited..titlebar(True)
+gui.F_Positive_Pay_PplsUnited.frOpt.create(frame)
+gui.F_Positive_Pay_PplsUnited.frOpt.caption("")
+gui.F_Positive_Pay_PplsUnited.frOpt.size(2745,585)
+gui.F_Positive_Pay_PplsUnited.frOpt.position(200,700)
+gui.F_Positive_Pay_PplsUnited.frOpt.visible(True)
+gui.F_Positive_Pay_PplsUnited.frOpt.borderstyle(0)
+gui.F_Positive_Pay_PplsUnited.frOpt.fontname("Arial")
+gui.F_Positive_Pay_PplsUnited.frOpt.fontsize(8)
+gui.F_Positive_Pay_PplsUnited.cmdOK.create(button)
+gui.F_Positive_Pay_PplsUnited.cmdOK.caption("Ok")
+gui.F_Positive_Pay_PplsUnited.cmdOK.visible(True)
+gui.F_Positive_Pay_PplsUnited.cmdOK.size(900,375)
+gui.F_Positive_Pay_PplsUnited.cmdOK.zorder(0)
+gui.F_Positive_Pay_PplsUnited.cmdOK.position(200,1400)
+gui.F_Positive_Pay_PplsUnited.cmdOK.enabled(True)
+gui.F_Positive_Pay_PplsUnited.cmdOK.fontname("Arial")
+gui.F_Positive_Pay_PplsUnited.cmdOK.fontsize(8)
+gui.F_Positive_Pay_PplsUnited.cmdOK.event(click,cmdok_click)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.create(datepicker)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.visible(True)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.size(1350,285)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.zorder(0)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.position(200,400)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.enabled(True)
+gui.F_Positive_Pay_PplsUnited.dtpBegin.checkbox(False)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.create(datepicker)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.visible(True)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.size(1350,285)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.zorder(0)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.position(1600,400)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.enabled(True)
+gui.F_Positive_Pay_PplsUnited.dtpEnd.checkbox(False)
+gui.F_Positive_Pay_PplsUnited.optChecks.create(option)
+gui.F_Positive_Pay_PplsUnited.optChecks.caption("Checks")
+gui.F_Positive_Pay_PplsUnited.optChecks.visible(True)
+gui.F_Positive_Pay_PplsUnited.optChecks.size(855,255)
+gui.F_Positive_Pay_PplsUnited.optChecks.zorder(0)
+gui.F_Positive_Pay_PplsUnited.optChecks.position(100,200)
+gui.F_Positive_Pay_PplsUnited.optChecks.enabled(True)
+gui.F_Positive_Pay_PplsUnited.optChecks.alignment(0)
+gui.F_Positive_Pay_PplsUnited.optChecks.parent("fropt")
+gui.F_Positive_Pay_PplsUnited.optChecks.fontname("Arial")
+gui.F_Positive_Pay_PplsUnited.optChecks.fontsize(8)
+gui.F_Positive_Pay_PplsUnited.optVoids.create(option)
+gui.F_Positive_Pay_PplsUnited.optVoids.caption("Voids")
+gui.F_Positive_Pay_PplsUnited.optVoids.visible(True)
+gui.F_Positive_Pay_PplsUnited.optVoids.size(1000,255)
+gui.F_Positive_Pay_PplsUnited.optVoids.zorder(0)
+gui.F_Positive_Pay_PplsUnited.optVoids.position(1200,200)
+gui.F_Positive_Pay_PplsUnited.optVoids.enabled(True)
+gui.F_Positive_Pay_PplsUnited.optVoids.alignment(0)
+gui.F_Positive_Pay_PplsUnited.optVoids.parent("fropt")
+gui.F_Positive_Pay_PplsUnited.optVoids.fontname("Arial")
+gui.F_Positive_Pay_PplsUnited.optVoids.fontsize(8)
+gui.F_Positive_Pay_PplsUnited.lblBeginDate.create(label,"Beginning Date",True,1935,255,1,200,200,True,0,Arial,8,-2147483633,0)
+gui.F_Positive_Pay_PplsUnited.lblEndDate.create(label,"Ending Date",True,1935,255,1,1600,200,True,0,Arial,8,-2147483633,0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by: Melinda Keyes
+'Project Start Date: 8/28/2012
+'Hooks:
+'  Custom Menu Item - Accounts Payable > Transactions > People's United Positive Pay
+'Quote: 3293
+'Notes:
+'  'This script creates a positive pay file in the format specified by Wells Fargo Bank
+
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+Gui.F_Positive_Pay_PplsUnited..Visible(true)
+Gui.F_Positive_Pay_PplsUnited..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_POS_PAY_PPLS_UNITED.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Main.End
+
+program.sub.cmdok_click.start
+'Create a positive pay file for export to People's United Bank
+F.Intrinsic.Control.SetErrorHandler("cmdok_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sReturn.Declare(String)
+V.Local.sFileName.Declare(String)
+V.Local.sMonth.Declare(String)
+V.Local.sDay.Declare(String)
+V.Local.sAcct.Declare(String)
+V.Local.iHdl.Declare(Long)
+
+Gui.F_Positive_Pay_PplsUnited..Enabled(false)
+
+F.Intrinsic.Control.If(V.Screen.F_Positive_Pay_PplsUnited!optChecks.Value,<>,True)
+F.Intrinsic.Control.AndIf(V.Screen.F_Positive_Pay_PplsUnited!optVoids.Value,<>,True)
+	F.Intrinsic.UI.Msgbox("Please select a checks or voids.","Print Type Required")
+	Gui.F_Positive_Pay_PplsUnited..Enabled(true)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.Inputbox("Please enter your People's United account number:","Enter Account Number","",V.Local.sFileName)
+F.Intrinsic.String.Concat(V.Caller.FilesDir,"\",V.Local.sFileName,".csv",V.Local.sFileName)
+
+F.Intrinsic.File.GetHandle(V.Local.iHdl)
+F.Intrinsic.File.GetFileList(V.Local.sFileName,V.Local.sReturn)
+F.Intrinsic.Control.If(V.Local.sReturn,=,"")
+	F.Intrinsic.File.OpenForWrite(V.Local.sFileName,V.Local.iHdl)
+F.Intrinsic.Control.Else
+	F.Intrinsic.File.DeleteFile(V.Local.sFileName)
+	F.Intrinsic.File.OpenForWrite(V.Local.sFileName,V.Local.iHdl)
+F.Intrinsic.Control.EndIf
+
+F.ODBC.Connection!conX.OpenRecordsetRO("rstAccts","SELECT DISTINCT ACCT_NO FROM V_CHECKS_LOG")
+F.Intrinsic.Control.If(V.ODBC.conX!rstAccts.EOF,<>,True)
+	V.Local.sAcct.Set(V.ODBC.conX!rstAccts.FieldValTrim!ACCT_NO)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rstAccts.Close
+
+F.Intrinsic.Control.CallSub(Detail_record,"iHdl",V.Local.iHdl)
+
+F.Intrinsic.File.CloseFile(V.Local.iHdl)
+F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdok_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_PplsUnited..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_POS_PAY_PPLS_UNITED.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdok_click.end
+
+Program.Sub.detail_record.Start
+'Write out a detail line to the file for each check/void to be printed
+F.Intrinsic.Control.SetErrorHandler("detail_record_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sChkSerial.Declare(String)
+V.Local.sIssueDate.Declare(String)
+V.Local.sAcctNum.Declare(String)
+V.Local.sTransCode.Declare(String)
+V.Local.sAmount.Declare(String)
+V.Local.sPayee.Declare(String)
+V.Local.sVendorNo.Declare(String)
+V.Local.iRecCount.Declare(Long)
+V.Local.iLen.Declare(Long)
+V.Local.fAmountTotal.Declare(Float)
+V.Local.fAmount.Declare(Float)
+V.Local.sQuery.Declare(String)
+V.Local.sBeginDate.Declare(String)
+V.Local.sEndDate.Declare(String)
+V.Local.sFileLine.Declare(String)
+V.Local.bDec.Declare(Boolean)
+V.Local.bExists.Declare(Boolean)
+V.Local.bMatch.Declare(Boolean)
+V.Local.sMsg.Declare(String)
+
+F.Intrinsic.String.Format(V.Screen.F_Positive_Pay_PplsUnited!dtpBegin.Value,"YYYY-MM-DD",V.Local.sBeginDate)
+F.Intrinsic.String.Format(V.Screen.F_Positive_Pay_PplsUnited!dtpEnd.Value,"YYYY-MM-DD",V.Local.sEndDate)
+
+'Open for accounts payable
+V.Local.sQuery.Set("SELECT * FROM V_CHECKS_LOG WHERE CK_OR_VOID = ")
+
+F.Intrinsic.Control.If(V.Screen.F_Positive_Pay_PplsUnited!optChecks.Value,=,True)
+'Print out checks
+	F.Intrinsic.String.Concat(V.Local.sQuery,"'C' AND CK_DATE BETWEEN '",V.Local.sBeginDate,"' AND '",V.Local.sEndDate,"' ORDER BY CK_DATE",V.Local.sQuery)
+	'transaction code - I for Issue
+	V.Local.sTransCode.Set("")
+F.Intrinsic.Control.Else
+'Print out voids
+	F.Intrinsic.String.Concat(V.Local.sQuery,"'V' AND CK_DATE BETWEEN '",V.Local.sBeginDate,"' AND '",V.Local.sEndDate,"' ORDER BY CK_DATE",V.Local.sQuery)
+	'transaction code - V for Void
+	V.Local.sTransCode.Set("V")
+F.Intrinsic.Control.EndIf
+
+V.Local.iRecCount.Set(0)
+V.Local.fAmountTotal.Set(0)
+
+'Open the accounts payable recordset
+F.ODBC.Connection!conX.OpenRecordsetRO("rstAccts",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conX!rstAccts.EOF,=,True)
+	V.Local.sChkSerial.Set(V.ODBC.conX!rstAccts.FieldValTrim!CK_NO)
+	V.Local.sIssueDate.Set(V.ODBC.conX!rstAccts.FieldValTrim!CK_MDYY)
+	F.Intrinsic.String.Format(V.Local.sIssueDate,"MM/DD/YYYY",V.Local.sIssueDate)
+	V.Local.sAcctNum.Set(V.ODBC.conX!rstAccts.FieldValTrim!ACCT_NO)
+	V.Local.fAmount.Set(V.ODBC.conX!rstAccts.FieldValFloat!AMOUNT)
+	F.Intrinsic.String.Format(V.Local.fAmount,"#.00",V.Local.sAmount)
+	V.Local.sVendorNo.Set(V.ODBC.conX!rstAccts.FieldValTrim!VEND_NO)
+
+	F.ODBC.Connection!conX.TableExists("VENDOR_PAY_TO",V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,True)
+		F.Intrinsic.String.Concat("SELECT NAME_VENDOR_PAY FROM VENDOR_PAY_TO WHERE VENDOR = '",V.Local.sVendorNo,"'",V.Local.sQuery)
+		F.ODBC.Connection!conX.OpenRecordsetRO("rstVendor",V.Local.sQuery)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstVendor.EOF,<>,True)
+			V.Local.sPayee.Set(V.ODBC.conX!rstVendor.FieldValTrim!NAME_VENDOR_PAY)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("No vendor pay to was found with the given vendor number.")
+			F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rstVendor.Close
+
+		'Check to see if the payee name matches the vendor name at all, if not use the payee name
+		F.Intrinsic.String.IsInString(V.ODBC.conX!rstAccts.FieldValTrim!PAYEE,V.Local.sPayee,True,V.Local.bMatch)
+		F.Intrinsic.Control.If(V.Local.bMatch,<>,True)
+			V.Local.sPayee.Set(V.ODBC.conX!rstAccts.FieldValTrim!PAYEE)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Table VENDOR_PAY_TO was not found. Exiting program.")
+		F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+	F.Intrinsic.Control.EndIf
+
+	'Remove any commas in the payee name which might cause an error in the csv file
+	F.Intrinsic.String.Replace(V.Local.sPayee,",","",V.Local.sPayee)
+	F.Intrinsic.String.Concat(V.Local.sAcctNum,",",V.Local.sChkSerial,",",V.Local.sAmount,",",V.Local.sIssueDate,",",V.Local.sTransCode,",",V.Local.sPayee,V.Local.sFileLine)
+	'F.Intrinsic.String.Concat(V.Local.sIssueDate,",",V.Local.sAmount,",",V.Local.sChkSerial,",",V.Local.sTransCode,",",V.Local.sAcctNum,",",V.Local.sPayee,V.Local.sFileLine)
+	F.Intrinsic.File.WriteLine(V.Args.iHdl,V.Local.sFileLine)
+	F.ODBC.conX!rstAccts.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conX!rstAccts.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("detail_record_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_PplsUnited..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_POS_PAY_PPLS_UNITED.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_pplsunited_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.detail_record.End
+
+program.sub.f_positive_pay_pplsunited_unload.start
+F.Intrinsic.Control.SetErrorHandler("f_positive_pay_pplsunited_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("f_positive_pay_pplsunited_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_POS_PAY_PPLS_UNITED.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.f_positive_pay_pplsunited_unload.end
+
+Program.Sub.Comments.Start
+${$0$}$ATG_POS_PAY_PPLS_UNITED$}$SUPERVSR$}$8/28/2012
+${$3$}$0$}$$}$-1$}$-1$}$$}$1/1/1900$}$A positive pay file program will be created from a custom menu item that will export a csv in the format provided for People's United Bank.
+
+The file name of the exported csv will be the account#.csv. Each record will include the issue date, amount, and serial number. All amounts will need to include a decimal. Dates should be in mmddyyyy format. The void indicator is "I" for issue and "V" for void. This field may be left blank if no voids are needed as issues are assumed. There should be no headers or trailers in the file. As a csv, columns should be separated by commas and should not overlap fields.
+Program.Sub.Comments.End
+
